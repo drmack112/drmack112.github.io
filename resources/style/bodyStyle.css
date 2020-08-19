@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+    background-color: #117700;
+    color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+  
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+  
+/* Left and right column */
+.column.side {
+    width: 10%;
+}
+  
+/* Middle column */
+  .column.middle {
+    width: 90%;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Style the footer */
+.footer {
+    background-color: #117700;
+    padding: 10px;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    width: 100%;
+    height: 80%;
+    background-color: #226600;
+    border-radius: 15px;
+    padding: 5px;
+}
+  
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.normal {
+    text-align: left;
+    font-size: 10px;
+    padding: 2.5%;
+    height: 100%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+}
+
+@media screen and (min-height: 836px) {
+    .normal {
+      font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 835px) {
+    .normal {
+      font-size: 12px;
+    }
+}
+  
+@media screen and (max-height: 450px) {
+    .normal {
+      font-size: 10px;
+    }
+}

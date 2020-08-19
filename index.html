@@ -2,28 +2,88 @@
 <html>
     <title>Mack's Homepage</title>
     <head></head>
-        <link href="resources/style/style.css" type="text/css" rel="stylesheet">
-        
+        <link href="resources/style/sidePanel.css" type="text/css" rel="stylesheet">
+        <link href="resources/style/bodyStyle.css" type="text/css" rel="stylesheet">
     <body>
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script src="resources/script/script.js"></script>
 
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Game Design</a>
-        <a href="#">Web Design</a>
-        <a href="#">CS AP</a>
-        <a href="#">CS Studio</a>
-        <a href="#">Contact</a>
+      <div class="header">
+        <h2>Mack's Lab</h2>
       </div>
-      
-      <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <p>Content...</p>
-      </div>
+
+        <div class="row">
+          <div class="column side" style="background-color:#336600;">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="https://drmack112.github.io/">Home</a>
+              <a href="resources/pages/About.html">About</a>
+              <a href="#">Game Design</a>
+              <a href="#">Web Design</a>
+              <a href="#">CS AP</a>
+              <a href="#">CS Studio</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <div class="column middle" style="background-color:#f1f1f1;">
+            
+            <h2>Welcome</h2>
+            
+            <p>Greetings and salutations! Welcome to my homepage. It's currently under construction and I'm updating when I can. Below is descriptions of the classes I teach, in the sidebar navigation you can find additional information. </p>
+            <p>You can find the syllabus along with lessons on each classes page, along with additional information about the classes or CS in general.</p>
+
+            <h2>Classes Overview</h2>
+            
+            <div class="grid-container">
+              <div>Game Design
+                <div class="normal">
+                  <p>Level: College Prep</p>
+                  <p>Grades: 9, 10, 11, 12</p>
+                  <p>Credits: .50 credit  </p>
+                  <p>Prerequisite: None</p>
+                  <p>The global media and entertainment industry is complex, expansive, and rapidly evolving. Within it, two highly creative, increasingly lucrative fields have emerged that are capturing the hearts and minds of millions: interactive applications and video game creation. Students taking the course will design, develop, and deploy an original application or game. Students will learn to write and maintain a large, living game design document (GDD) and a daily design journal. Students will gain introductory artistic skills to 3D Modeling and Texturing using 3DS Max and Photoshop.</p>
+                </div>
+              </div>
+              <div>Web Development
+                <div class="normal">
+                  <p>Level: College Prep</p>
+                  <p>Grades: 9, 10, 11</p>
+                  <p>Credits: .50 credit</p>
+                  <p>Prerequisite: None</p>
+                  <p>Computer Science App and Web Design is designed to introduce students to the breadth of the field of computer science through an exploration of mobile App creation and Web Design, through learning HTML/CSS and JavaScript. The course is designed to focus on the conceptual ideas of computing and help students understand why certain tools or languages might be utilized to solve particular problems. The goal of CS App and Web Design is to develop the computational thinking practices of algorithm development, problem solving and programming within the context of problems that are relevant to the lives of today’s students. Students will also be introduced to topics such as interface design, limits of computers and societal
+                    and ethical issues. This is a competency-based course that is recommended for students pursuing a focus in programming.
+                    </p>
+                </div>
+              </div>
+              <div>CS AP
+                <div class="normal">
+                  <p>Level: AP/Advanced</p>
+                  <p>Grades: 10, 11, 12</p>
+                  <p>Credits: 1.0 credit</p>
+                  <p>Prerequisite: Grade of 80% or higher in Algebra 1</p>
+                  <p>Computer Science 50 is Harvard University's introduction to the intellectual enterprises of computer science and the art of programming for all students regardless of comfort level. This course aligns with the new AP Computer Science Principles curriculum. Students will learn the basics of Computer Science through Scratch and progress through learning C, Python, Javascript, and SQL. Students will be able to apply the knowledge gained to create tools and applications to be used in any discipline of their choice.</p>
+                </div>
+              </div> 
+                <div>CS Studio
+                  <div class="normal">
+                    <p>Level: Advanced</p>
+                    <p>Grades: 11, 12</p>
+                    <p>Credits: 1.0 credit</p>
+                    <p>Prerequisite: CS50 AP with a grade of 80% or higher</p>
+                    <p>Students in Computer Science Studio will continue to grow and apply their knowledge from CS50 while learning how to create and maintain programs in a Java/Android environment. Students will learn more Object Oriented Programming techniques and advanced web design practices. This class will produce real applications to be uploaded and maintained on the Google Play store among other outlets.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="footer">
+          <p>White Mountain Regional Career and Technical Center</p>
+        </div>
 
     </body>
 </html>
