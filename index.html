@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
+    <title>Mack's Homepage</title>
     <head></head>
-        <link href="\resources\style\style.css" type="text/css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="/resources/script/script.js"></script>
+        <link href="resources/style/style.css" type="text/css" rel="stylesheet">
+        
     <body>
       
-      <div id="mySidepanel" class="sidepanel">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="resources/script/script.js"></script>
+
+      <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
+        <a href="#">Game Design</a>
+        <a href="#">Web Design</a>
+        <a href="#">CS AP</a>
+        <a href="#">CS Studio</a>
         <a href="#">Contact</a>
       </div>
       
-      <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidepanel</button>
-      <h2>Collapsed Sidepanel</h2>
-      <p>Content...</p>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <p>Content...</p>
+      </div>
 
     </body>
 </html>
