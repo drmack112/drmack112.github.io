@@ -73,6 +73,23 @@ body {
     height: 100%;
 }
 
+.cardE{
+    border-style: solid;
+    border-color: #117700;
+    border-radius: 15px;
+    padding: 1%;
+    background-color: #226600;
+    color: #f1f1f1;
+}
+
+.cardO{
+    border-style: solid;
+    border-color: #226600;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 1%;
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .column.side, .column.middle {
